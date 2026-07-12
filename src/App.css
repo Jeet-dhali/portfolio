@@ -828,15 +828,38 @@ textarea.form-input {
 }
 
 /* ═══ Scroll Reveal Animation ═══ */
+
+/* Base hidden state: any .reveal element starts hidden, whether it's the
+   observed node itself (stack/education wrappers) or a child that gets
+   revealed when its parent's observer fires (hero/projects/contact). */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 600ms var(--ease), transform 600ms var(--ease);
 }
 
+/* Case A: the observed element IS the .reveal element (not used currently,
+   kept for any future single-element sections). */
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Case B: the observed element is a parent (hero-grid, projects-grid,
+   contact-grid) and .reveal lives on its children. When the parent gets
+   .visible, cascade the reveal down to each child, staggering the second
+   child slightly so paired elements still feel choreographed rather than
+   popping in identically. */
+.hero-grid.visible > .reveal,
+.projects-grid.visible > .reveal,
+.contact-grid.visible > .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-grid.visible > .reveal:nth-child(2),
+.contact-grid.visible > .reveal:nth-child(2) {
+  transition-delay: 120ms;
 }
 
 /* stagger children */
