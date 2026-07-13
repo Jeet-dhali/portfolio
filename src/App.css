@@ -181,9 +181,11 @@
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-3xl);
   align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero-badge {
@@ -215,6 +217,8 @@
 
 .hero-title {
   margin-bottom: var(--space-lg);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
 }
 
 .hero-title .gradient-text {
@@ -225,9 +229,10 @@
 }
 
 .hero-description {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   margin-bottom: var(--space-xl);
-  max-width: 500px;
+  max-width: 600px;
+  line-height: 1.7;
 }
 
 .hero-actions {
@@ -881,10 +886,6 @@ textarea.form-input {
 
 /* ═══ Responsive ═══ */
 @media (max-width: 1024px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-  }
   .stack-categories {
     grid-template-columns: 1fr;
   }
