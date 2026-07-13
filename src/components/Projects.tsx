@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, GithubIcon } from './Icons';
-import projAttendImg from '../assets/project_attend.png';
+import projAttendImg from '../assets/myattend.png';
 import './Projects.css';
 import '../styles/layout.css';
 

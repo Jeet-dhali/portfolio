@@ -1,0 +1,71 @@
+/* ═══ Education ═══ */
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.edu-card {
+  background: #0a0a0a;
+  border: 1px solid #222222;
+  border-radius: 0;
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+  transition: all 400ms var(--ease);
+}
+
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--teal));
+  opacity: 0;
+  transition: opacity var(--duration) var(--ease);
+}
+
+.edu-card:hover {
+  border-color: #a855f7;
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.edu-card:hover::before {
+  opacity: 1;
+}
+
+.edu-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-sm);
+}
+
+.edu-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.edu-institution {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+  margin-bottom: var(--space-md);
+}
+
+.edu-details {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .education-cards {
+    grid-template-columns: 1fr;
+  }
+}

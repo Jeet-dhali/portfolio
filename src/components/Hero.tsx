@@ -30,8 +30,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
             >
-              I'm a software engineer and computer science student passionate about creating clean, functional web applications.
-              I specialize in React, Next.js, and modern frontend technologies. Currently pursuing my B.Tech in Computer Science while building projects that solve real student pain points.
+              I'm a Fullstack Developer passionate about creating clean, functional web applications.
+              I specialize in React, Next.js, and modern frontend technologies. Currently pursuing my B.Tech in Electrical and Electronics Engineering while building projects that solve real student pain points.
             </motion.p>
 
             <motion.p 

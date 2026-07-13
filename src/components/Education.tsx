@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import "./Education.css"
+import "../styles/layout.css"
+import "../styles/buttons.css"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -47,20 +50,20 @@ export function Education() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div className="edu-card" variants={itemVariants} whileHover={{ y: -8, transition: { duration: 0.2 } }}>
-            <div className="edu-date">2022 — Present</div>
-            <h3>B.Tech in Computer Science</h3>
-            <span className="edu-institution">University (Pursuing)</span>
+            <div className="edu-date">2025 — Present</div>
+            <h3>B.Tech in Electrical and Electronics Engineering</h3>
+            <span className="edu-institution">National Institute of Technology Nagaland</span>
             <p className="edu-details">
-              Studying core computer science — data structures, algorithms, operating systems, databases, and web development. Building projects that solve student pain points.
+              CGPA - 8.0
             </p>
           </motion.div>
 
           <motion.div className="edu-card" variants={itemVariants} whileHover={{ y: -8, transition: { duration: 0.2 } }}>
-            <div className="edu-date">2020 — 2022</div>
-            <h3>Higher Secondary (12th Grade)</h3>
-            <span className="edu-institution">Science Stream — PCM with CS</span>
+            <div className="edu-date">2023 — 2025</div>
+            <h3>Higher Secondary Education</h3>
+            <span className="edu-institution">Shemford School</span>
             <p className="edu-details">
-              Completed higher secondary education with a focus on Physics, Chemistry, Mathematics, and Computer Science. First introduction to programming.
+              Boards Percentage - 94.2%
             </p>
           </motion.div>
         </motion.div>

@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import "./Footer.css"
+import "../styles/layout.css"
+import "../styles/buttons.css"
 
 export function Footer() {
   return (
@@ -17,7 +20,7 @@ export function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          &copy; {new Date().getFullYear()} Jeet Dhali. Built with React & Vite.
+          &copy; {new Date().getFullYear()} Jeet Dhali.
         </motion.p>
         <motion.div 
           className="footer-links"

@@ -1,6 +1,9 @@
 import { useState, type FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { MailIcon, MapPinIcon, GithubIcon, ExternalLink, ArrowRight } from './Icons';
+import "./Contact.css"
+import "../styles/layout.css"
+import "../styles/buttons.css"
 
 export function Contact() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -40,7 +43,7 @@ export function Contact() {
               </div>
               <div>
                 <h4>Email</h4>
-                <p><a href="mailto:jeet@jeetdhali.dev">jeet@jeetdhali.dev</a></p>
+                <p><a href="mailto:jeetproxy@gmail.com">jeetproxy@gmail.com</a></p>
               </div>
             </motion.div>
 
@@ -60,7 +63,7 @@ export function Contact() {
               </div>
               <div>
                 <h4>GitHub</h4>
-                <p><a href="https://github.com/Jeet-dhali" target="_blank" rel="noopener noreferrer">github.com/Jeet-dhali</a></p>
+                <p><a href="https://github.com/jeet-dhali" target="_blank" rel="noopener noreferrer">github.com/jeet-dhali</a></p>
               </div>
             </motion.div>
 
@@ -71,16 +74,6 @@ export function Contact() {
               <div>
                 <h4>Portfolio</h4>
                 <p><a href="https://jeetdhali.dev" target="_blank" rel="noopener noreferrer">jeetdhali.dev</a></p>
-              </div>
-            </motion.div>
-
-            <motion.div className="contact-info-item" whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-              <div className="contact-icon">
-                <ExternalLink />
-              </div>
-              <div>
-                <h4>MyAttendTracker</h4>
-                <p><a href="https://myattendtracker.com" target="_blank" rel="noopener noreferrer">myattendtracker.com</a></p>
               </div>
             </motion.div>
           </motion.div>

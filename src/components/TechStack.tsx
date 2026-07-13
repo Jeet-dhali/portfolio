@@ -57,7 +57,7 @@ export function TechStack() {
               <span className="stack-tag">HTML</span>
               <span className="stack-tag">CSS</span>
               <span className="stack-tag">Python</span>
-              <span className="stack-tag">Java</span>
+              <span className="stack-tag">C++</span>
             </div>
           </motion.div>
 
