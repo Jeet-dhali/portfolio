@@ -1,0 +1,76 @@
+/* ═══ Tech Stack ═══ */
+.stack-section {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.stack-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.stack-category {
+  background: #000000;
+  border: 1px solid #222222;
+  border-radius: 0;
+  padding: var(--space-xl);
+  transition: all var(--duration) var(--ease);
+}
+
+.stack-category:hover {
+  border-color: #a855f7;
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+.stack-category-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+  font-size: 20px;
+}
+
+.stack-category-icon.languages { background: var(--accent-soft); color: var(--accent); }
+.stack-category-icon.frontend { background: var(--teal-soft); color: var(--teal); }
+.stack-category-icon.tools { background: var(--amber-soft); color: var(--amber); }
+
+.stack-category h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.stack-tag {
+  font-size: 13px;
+  font-weight: 500;
+  color: #e6e6e6;
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 0;
+  padding: 6px 14px;
+  transition: all var(--duration) var(--ease);
+}
+
+.stack-tag:hover {
+  color: #ffffff;
+  border-color: #a855f7;
+  background: rgba(168, 85, 247, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .stack-categories {
+    grid-template-columns: 1fr;
+  }
+}

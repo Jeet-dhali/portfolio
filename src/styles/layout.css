@@ -1,0 +1,48 @@
+/* ═══ Layout ═══ */
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: var(--space-lg);
+}
+
+.section {
+  padding-block: var(--space-4xl);
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: var(--space-sm);
+}
+
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: var(--radius-full);
+}
+
+.section-title {
+  margin-bottom: var(--space-md);
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  max-width: 560px;
+  color: #d4d4d4;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: var(--space-3xl);
+  }
+}
